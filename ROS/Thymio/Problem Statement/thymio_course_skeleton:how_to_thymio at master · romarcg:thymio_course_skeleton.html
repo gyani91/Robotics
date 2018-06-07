@@ -1,0 +1,1115 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  <link rel="dns-prefetch" href="https://assets-cdn.github.com">
+  <link rel="dns-prefetch" href="https://avatars0.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars1.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars2.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars3.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com">
+  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
+
+
+
+  <link crossorigin="anonymous" media="all" integrity="sha512-ISsGppDAOaepQ4upEA9mm4sMLKs3V+WJ5yaoGgHBrY13vkDtM37b0Y8Uej1pifaUkAcHJ9kkdxNf48eHtV595g==" rel="stylesheet" href="https://assets-cdn.github.com/assets/frameworks-1a4dd44c32a7f3b22f5ee95cb87b4646.css" />
+  <link crossorigin="anonymous" media="all" integrity="sha512-AZiPkC2eIY8yQTwd2GHdf+vGVxhQLPp8zN5HD/+XIxTljkmK532EPMi5J59/RkU8Tx2z7Zhrrp22Ynk0bifnPQ==" rel="stylesheet" href="https://assets-cdn.github.com/assets/github-ef9e6df593c3136722bd837c0437786d.css" />
+  
+  
+  
+  
+
+  <meta name="viewport" content="width=device-width">
+  
+  <title>thymio_course_skeleton/how_to_thymio at master · romarcg/thymio_course_skeleton</title>
+    <meta name="description" content="GitHub is where people build software. More than 27 million people use GitHub to discover, fork, and contribute to over 80 million projects.">
+  <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+  <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+  <meta property="fb:app_id" content="1401488693436528">
+
+    
+    <meta property="og:image" content="https://avatars3.githubusercontent.com/u/1706287?s=400&amp;v=4" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="romarcg/thymio_course_skeleton" /><meta property="og:url" content="https://github.com/romarcg/thymio_course_skeleton" /><meta property="og:description" content="thymio_course_skeleton - Skeleton ROS package to start using the mighty thymio. Robotics course." />
+
+  <link rel="assets" href="https://assets-cdn.github.com/">
+  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MjYxOTE2MzEyOjI3ZTRlNGRlOWRhZGRlNzBlMGY2OTBmMmQ0Yzc3MjAxZTNkZDUxNmU0ODcyZTI0MGZjZDIyZDZhNTg4OTE0ODg=--510a0515c0e8ced7f5f4fa8f57077b2351a7556e">
+  <meta name="pjax-timeout" content="1000">
+  <link rel="sudo-modal" href="/sessions/sudo_modal">
+  <meta name="request-id" content="CE24:4B03:1DBF7F8:363F9BF:5AEC0A0F" data-pjax-transient>
+
+
+  
+
+  <meta name="selected-link" value="repo_source" data-pjax-transient>
+
+    <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+  <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+  <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
+    <meta name="google-analytics" content="UA-3769691-2">
+
+<meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-request_id" content="CE24:4B03:1DBF7F8:363F9BF:5AEC0A0F" /><meta name="octolytics-dimension-region_edge" content="iad" /><meta name="octolytics-dimension-region_render" content="iad" /><meta name="octolytics-actor-id" content="4917261" /><meta name="octolytics-actor-login" content="gyani91" /><meta name="octolytics-actor-hash" content="f1ca990b66dac211af7018b4784d665a3265de8dc8268800f14a26502b7f971c" />
+<meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;/files/disambiguate" data-pjax-transient="true" />
+
+
+
+
+  <meta class="js-ga-set" name="dimension1" content="Logged In">
+
+
+  
+
+      <meta name="hostname" content="github.com">
+    <meta name="user-login" content="gyani91">
+
+      <meta name="expected-hostname" content="github.com">
+    <meta name="js-proxy-site-detection-payload" content="NmViNGU2MzkxMmY3MGM5YTAzM2I5MjQ0NzY1NTE3NGQxYTdiZjJhNjE4MjBlNjc2M2NjY2U5MmFlNTNkMjgwZXx7InJlbW90ZV9hZGRyZXNzIjoiMTk1LjE3Ni4xNzguMTg0IiwicmVxdWVzdF9pZCI6IkNFMjQ6NEIwMzoxREJGN0Y4OjM2M0Y5QkY6NUFFQzBBMEYiLCJ0aW1lc3RhbXAiOjE1MjU0MTg1NDAsImhvc3QiOiJnaXRodWIuY29tIn0=">
+
+    <meta name="enabled-features" content="UNIVERSE_BANNER,FREE_TRIALS,MARKETPLACE_INSIGHTS,MARKETPLACE_SELF_SERVE,MARKETPLACE_FREE_APPS,MARKETPLACE_INSIGHTS_CONVERSION_PERCENTAGES,MOBILE_COMMENT_ACTIONS">
+
+  <meta name="html-safe-nonce" content="eca8490d70d717bd14e9ebbfbe7b3d87c4706aac">
+
+  <meta http-equiv="x-pjax-version" content="c4623cd7602701a31504cca31790c805">
+  
+
+      <link href="https://github.com/romarcg/thymio_course_skeleton/commits/master.atom" rel="alternate" title="Recent Commits to thymio_course_skeleton:master" type="application/atom+xml">
+
+  <meta name="description" content="thymio_course_skeleton - Skeleton ROS package to start using the mighty thymio. Robotics course.">
+  <meta name="go-import" content="github.com/romarcg/thymio_course_skeleton git https://github.com/romarcg/thymio_course_skeleton.git">
+
+  <meta name="octolytics-dimension-user_id" content="1706287" /><meta name="octolytics-dimension-user_login" content="romarcg" /><meta name="octolytics-dimension-repository_id" content="130069456" /><meta name="octolytics-dimension-repository_nwo" content="romarcg/thymio_course_skeleton" /><meta name="octolytics-dimension-repository_public" content="true" /><meta name="octolytics-dimension-repository_is_fork" content="false" /><meta name="octolytics-dimension-repository_network_root_id" content="130069456" /><meta name="octolytics-dimension-repository_network_root_nwo" content="romarcg/thymio_course_skeleton" /><meta name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" content="false" />
+
+
+    <link rel="canonical" href="https://github.com/romarcg/thymio_course_skeleton/tree/master/how_to_thymio" data-pjax-transient>
+
+
+  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+
+  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+
+  <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#000000">
+  <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico">
+
+<meta name="theme-color" content="#1e2327">
+
+  <link rel="apple-touch-icon" href="https://assets-cdn.github.com/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://assets-cdn.github.com/apple-touch-icon-180x180.png">
+  <meta name="apple-mobile-web-app-title" content="GitHub">
+
+
+<link rel="manifest" href="/manifest.json" crossOrigin="use-credentials">
+
+  </head>
+
+  <body class="logged-in env-production false">
+    
+
+  <div class="position-relative js-header-wrapper ">
+    <a href="#start-of-content" tabindex="1" class="p-3 bg-blue text-white show-on-focus js-skip-to-content">Skip to content</a>
+    <div id="js-pjax-loader-bar" class="pjax-loader-bar"><div class="progress"></div></div>
+
+    
+    
+    
+
+
+
+        
+<header class="Header  f5" role="banner">
+  <div class="d-flex flex-justify-between px-3 container-lg">
+    <div class="d-flex flex-justify-between ">
+      <div class="">
+        <a class="header-logo-invertocat" href="https://github.com/" data-hotkey="g d" aria-label="Homepage" data-ga-click="Header, go to dashboard, icon:logo">
+  <svg height="32" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
+
+      </div>
+
+    </div>
+
+    <div class="HeaderMenu d-flex flex-justify-between flex-auto">
+      <div class="d-flex">
+            <div class="">
+              <div class="header-search scoped-search site-scoped-search js-site-search" role="search">
+  <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-site-search-form" data-scope-type="Repository" data-scope-id="130069456" data-scoped-search-url="/romarcg/thymio_course_skeleton/search" data-unscoped-search-url="/search" action="/romarcg/thymio_course_skeleton/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+    <label class="form-control header-search-wrapper  js-chromeless-input-container">
+          <a class="header-search-scope no-underline" href="/romarcg/thymio_course_skeleton/tree/master/how_to_thymio">This repository</a>
+      <input type="text"
+        class="form-control header-search-input  js-site-search-focus js-site-search-field is-clearable"
+        data-hotkey="s,/"
+        name="q"
+        value=""
+        placeholder="Search"
+        aria-label="Search this repository"
+        data-unscoped-placeholder="Search GitHub"
+        data-scoped-placeholder="Search"
+        autocapitalize="off"
+        >
+        <input type="hidden" class="js-site-search-type-field" name="type" >
+    </label>
+</form></div>
+
+            </div>
+
+          <ul class="d-flex pl-2 flex-items-center text-bold list-style-none" role="navigation">
+            <li>
+              <a class="js-selected-navigation-item HeaderNavlink px-2" data-hotkey="g p" data-ga-click="Header, click, Nav menu - item:pulls context:user" aria-label="Pull requests you created" data-selected-links="/pulls /pulls/assigned /pulls/mentioned /pulls" href="/pulls">
+                Pull requests
+</a>            </li>
+            <li>
+              <a class="js-selected-navigation-item HeaderNavlink px-2" data-hotkey="g i" data-ga-click="Header, click, Nav menu - item:issues context:user" aria-label="Issues you created" data-selected-links="/issues /issues/assigned /issues/mentioned /issues" href="/issues">
+                Issues
+</a>            </li>
+                <li>
+                  <a class="js-selected-navigation-item HeaderNavlink px-2" data-ga-click="Header, click, Nav menu - item:marketplace context:user" data-octo-click="marketplace_click" data-octo-dimensions="location:nav_bar, group:" data-selected-links=" /marketplace" href="/marketplace">
+                    Marketplace
+</a>                </li>
+            <li>
+              <a class="js-selected-navigation-item HeaderNavlink px-2" data-ga-click="Header, click, Nav menu - item:explore" data-selected-links="/explore /trending /trending/developers /integrations /integrations/feature/code /integrations/feature/collaborate /integrations/feature/ship showcases showcases_search showcases_landing /explore" href="/explore">
+                Explore
+</a>            </li>
+          </ul>
+      </div>
+
+      <div class="d-flex">
+        
+<ul class="user-nav d-flex flex-items-center list-style-none" id="user-links">
+  <li class="dropdown js-menu-container">
+    <span class="d-inline-block  px-2">
+      
+    <a aria-label="You have no unread notifications" class="notification-indicator tooltipped tooltipped-s  js-socket-channel js-notification-indicator" data-hotkey="g n" data-ga-click="Header, go to notifications, icon:read" data-channel="notification-changed:4917261" href="/notifications">
+        <span class="mail-status "></span>
+        <svg class="octicon octicon-bell" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 12v1H0v-1l.73-.58c.77-.77.81-2.55 1.19-4.42C2.69 3.23 6 2 6 2c0-.55.45-1 1-1s1 .45 1 1c0 0 3.39 1.23 4.16 5 .38 1.88.42 3.66 1.19 4.42l.66.58H14zm-7 4c1.11 0 2-.89 2-2H5c0 1.11.89 2 2 2z"/></svg>
+</a>
+    </span>
+  </li>
+
+  <li class="dropdown js-menu-container">
+    <details class="dropdown-details details-reset js-dropdown-details d-flex px-2 flex-items-center">
+      <summary class="HeaderNavlink"
+         aria-label="Create new…"
+         data-ga-click="Header, create new, icon:add">
+        <svg class="octicon octicon-plus float-left mr-1 mt-1" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 9H7v5H5V9H0V7h5V2h2v5h5z"/></svg>
+        <span class="dropdown-caret mt-1"></span>
+      </summary>
+
+      <ul class="dropdown-menu dropdown-menu-sw">
+        
+<a class="dropdown-item" href="/new" data-ga-click="Header, create new repository">
+  New repository
+</a>
+
+  <a class="dropdown-item" href="/new/import" data-ga-click="Header, import a repository">
+    Import repository
+  </a>
+
+<a class="dropdown-item" href="https://gist.github.com/" data-ga-click="Header, create new gist">
+  New gist
+</a>
+
+  <a class="dropdown-item" href="/organizations/new" data-ga-click="Header, create new organization">
+    New organization
+  </a>
+
+
+
+  <div class="dropdown-divider"></div>
+  <div class="dropdown-header">
+    <span title="romarcg/thymio_course_skeleton">This repository</span>
+  </div>
+    <a class="dropdown-item" href="/romarcg/thymio_course_skeleton/issues/new" data-ga-click="Header, create new issue">
+      New issue
+    </a>
+
+      </ul>
+    </details>
+  </li>
+
+  <li class="dropdown js-menu-container">
+
+    <details class="dropdown-details details-reset js-dropdown-details d-flex pl-2 flex-items-center">
+      <summary class="HeaderNavlink name mt-1"
+        aria-label="View profile and more"
+        data-ga-click="Header, show menu, icon:avatar">
+        <img alt="@gyani91" class="avatar float-left mr-1" src="https://avatars0.githubusercontent.com/u/4917261?s=40&amp;v=4" height="20" width="20">
+        <span class="dropdown-caret"></span>
+      </summary>
+
+      <ul class="dropdown-menu dropdown-menu-sw">
+        <li class="dropdown-header header-nav-current-user css-truncate">
+          Signed in as <strong class="css-truncate-target">gyani91</strong>
+        </li>
+
+        <li class="dropdown-divider"></li>
+
+        <li><a class="dropdown-item" href="/gyani91" data-ga-click="Header, go to profile, text:your profile">
+          Your profile
+        </a></li>
+        <li><a class="dropdown-item" href="/gyani91?tab=stars" data-ga-click="Header, go to starred repos, text:your stars">
+          Your stars
+        </a></li>
+          <li><a class="dropdown-item" href="https://gist.github.com/" data-ga-click="Header, your gists, text:your gists">Your gists</a></li>
+
+        <li class="dropdown-divider"></li>
+
+        <li><a class="dropdown-item" href="https://help.github.com" data-ga-click="Header, go to help, text:help">
+          Help
+        </a></li>
+
+        <li><a class="dropdown-item" href="/settings/profile" data-ga-click="Header, go to settings, icon:settings">
+          Settings
+        </a></li>
+
+        <li><!-- '"` --><!-- </textarea></xmp> --></option></form><form class="logout-form" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="kxoq72g05aLYl+eRUFxKnHwnT5spq/hYY8cjdeElevUEXh/YF2ZthPwo0vrxiWsFOp1qzfdzMwR5DvMkDmyj+A==" />
+          <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
+            Sign out
+          </button>
+        </form></li>
+      </ul>
+    </details>
+  </li>
+</ul>
+
+
+
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="sr-only right-0" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="zDL7yc2llB85XBP6GfM1BExyI1CyiwoYVQ3SoB7T8CNbds7+svccOR3jJpG4JhSdCsgGBmxTwURPxALx8ZopLg==" />
+          <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
+            Sign out
+          </button>
+</form>      </div>
+    </div>
+  </div>
+</header>
+
+      
+
+  </div>
+
+  <div id="start-of-content" class="show-on-focus"></div>
+
+    <div id="js-flash-container">
+</div>
+
+
+
+  <div role="main" class="application-main ">
+        <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="">
+    <div id="js-repo-pjax-container" data-pjax-container >
+      
+
+
+
+
+
+  <div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav  ">
+    <div class="repohead-details-container clearfix container">
+
+      <ul class="pagehead-actions">
+  <li>
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-autosubmit="true" data-remote="true" class="js-social-container" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="M+SRYw9dmgTtxTOuy7/c5FHQdVvJB5CysNOOKKWmH3oZzRe/hEq0KtClT5E68KWcuhlHzMDppzUpiKjI15YfTw==" />      <input type="hidden" name="repository_id" id="repository_id" value="130069456" class="form-control" />
+
+        <div class="select-menu js-menu-container js-select-menu">
+          <a href="/romarcg/thymio_course_skeleton/subscription"
+            class="btn btn-sm btn-with-count select-menu-button js-menu-target"
+            role="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-label="Toggle repository notifications menu"
+            data-ga-click="Repository, click Watch settings, action:files#disambiguate">
+            <span class="js-select-button">
+                <svg class="octicon octicon-eye" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+                Watch
+            </span>
+          </a>
+          <a class="social-count js-social-count"
+            href="/romarcg/thymio_course_skeleton/watchers"
+            aria-label="2 users are watching this repository">
+            2
+          </a>
+
+        <div class="select-menu-modal-holder">
+          <div class="select-menu-modal subscription-menu-modal js-menu-content">
+            <div class="select-menu-header js-navigation-enable" tabindex="-1">
+              <svg class="octicon octicon-x js-menu-close" role="img" aria-label="Close" viewBox="0 0 12 16" version="1.1" width="12" height="16"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+              <span class="select-menu-title">Notifications</span>
+            </div>
+
+              <div class="select-menu-list js-navigation-container" role="menu">
+
+                <div class="select-menu-item js-navigation-item selected" role="menuitem" tabindex="0">
+                  <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+                  <div class="select-menu-item-text">
+                    <input type="radio" name="do" id="do_included" value="included" checked="checked" />
+                    <span class="select-menu-item-heading">Not watching</span>
+                    <span class="description">Be notified when participating or @mentioned.</span>
+                    <span class="js-select-button-text hidden-select-button-text">
+                      <svg class="octicon octicon-eye" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+                      Watch
+                    </span>
+                  </div>
+                </div>
+
+                <div class="select-menu-item js-navigation-item " role="menuitem" tabindex="0">
+                  <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+                  <div class="select-menu-item-text">
+                    <input type="radio" name="do" id="do_subscribed" value="subscribed" />
+                    <span class="select-menu-item-heading">Watching</span>
+                    <span class="description">Be notified of all conversations.</span>
+                    <span class="js-select-button-text hidden-select-button-text">
+                      <svg class="octicon octicon-eye" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+                        Unwatch
+                    </span>
+                  </div>
+                </div>
+
+                <div class="select-menu-item js-navigation-item " role="menuitem" tabindex="0">
+                  <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+                  <div class="select-menu-item-text">
+                    <input type="radio" name="do" id="do_ignore" value="ignore" />
+                    <span class="select-menu-item-heading">Ignoring</span>
+                    <span class="description">Never be notified.</span>
+                    <span class="js-select-button-text hidden-select-button-text">
+                      <svg class="octicon octicon-mute" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 2.81v10.38c0 .67-.81 1-1.28.53L3 10H1c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1h2l3.72-3.72C7.19 1.81 8 2.14 8 2.81zm7.53 3.22l-1.06-1.06-1.97 1.97-1.97-1.97-1.06 1.06L11.44 8 9.47 9.97l1.06 1.06 1.97-1.97 1.97 1.97 1.06-1.06L13.56 8l1.97-1.97z"/></svg>
+                        Stop ignoring
+                    </span>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+</form>
+  </li>
+
+  <li>
+    
+  <div class="js-toggler-container js-social-container starring-container ">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" action="/romarcg/thymio_course_skeleton/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="RiQfJ1hW6CQyW+U5Kxwh9Bbt6B4EObqXZPSJyHXqR1e/twi13JTSpy0qkyzbdR5h6vkDid9jhpi4AkPQSghV8g==" />
+      <input type="hidden" name="context" value="repository"></input>
+      <button
+        type="submit"
+        class="btn btn-sm btn-with-count js-toggler-target"
+        aria-label="Unstar this repository" title="Unstar romarcg/thymio_course_skeleton"
+        data-ga-click="Repository, click unstar button, action:files#disambiguate; text:Unstar">
+        <svg class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"/></svg>
+        Unstar
+      </button>
+        <a class="social-count js-social-count" href="/romarcg/thymio_course_skeleton/stargazers"
+           aria-label="2 users starred this repository">
+          2
+        </a>
+</form>
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" action="/romarcg/thymio_course_skeleton/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="dFyvZOcDO7+V8hc07osYX4F55MkYJ8wZtK8sAEqv0eJBd2O+CLmJzu7wQKUMzHPkADcgE/RXPY1Z4xzGVcL3Vw==" />
+      <input type="hidden" name="context" value="repository"></input>
+      <button
+        type="submit"
+        class="btn btn-sm btn-with-count js-toggler-target"
+        aria-label="Star this repository" title="Star romarcg/thymio_course_skeleton"
+        data-ga-click="Repository, click star button, action:files#disambiguate; text:Star">
+        <svg class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"/></svg>
+        Star
+      </button>
+        <a class="social-count js-social-count" href="/romarcg/thymio_course_skeleton/stargazers"
+           aria-label="2 users starred this repository">
+          2
+        </a>
+</form>  </div>
+
+  </li>
+
+  <li>
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="btn-with-count" action="/romarcg/thymio_course_skeleton/fork" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="n9N9E52s5SpJEvO0c9yqzjUE7jRQMXNfkknOUvSNRjM+pLaB+q9a7S10l+PvGJkp/rCsHIYrIWBmBiVjacYVfQ==" />
+            <button
+                type="submit"
+                class="btn btn-sm btn-with-count"
+                data-ga-click="Repository, show fork modal, action:files#disambiguate; text:Fork"
+                title="Fork your own copy of romarcg/thymio_course_skeleton to your account"
+                aria-label="Fork your own copy of romarcg/thymio_course_skeleton to your account">
+              <svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+              Fork
+            </button>
+</form>
+    <a href="/romarcg/thymio_course_skeleton/network" class="social-count"
+       aria-label="4 users forked this repository">
+      4
+    </a>
+  </li>
+</ul>
+
+      <h1 class="public ">
+  <svg class="octicon octicon-repo" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+  <span class="author" itemprop="author"><a class="url fn" rel="author" href="/romarcg">romarcg</a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong itemprop="name"><a data-pjax="#js-repo-pjax-container" href="/romarcg/thymio_course_skeleton">thymio_course_skeleton</a></strong>
+
+</h1>
+
+    </div>
+    
+<nav class="reponav js-repo-nav js-sidenav-container-pjax container"
+     itemscope
+     itemtype="http://schema.org/BreadcrumbList"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container">
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a class="js-selected-navigation-item selected reponav-item" itemprop="url" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /romarcg/thymio_course_skeleton" href="/romarcg/thymio_course_skeleton">
+      <svg class="octicon octicon-code" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"/></svg>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a itemprop="url" data-hotkey="g i" class="js-selected-navigation-item reponav-item" data-selected-links="repo_issues repo_labels repo_milestones /romarcg/thymio_course_skeleton/issues" href="/romarcg/thymio_course_skeleton/issues">
+        <svg class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+        <span itemprop="name">Issues</span>
+        <span class="Counter">0</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a data-hotkey="g p" itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_pulls checks /romarcg/thymio_course_skeleton/pulls" href="/romarcg/thymio_course_skeleton/pulls">
+      <svg class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      <span itemprop="name">Pull requests</span>
+      <span class="Counter">0</span>
+      <meta itemprop="position" content="3">
+</a>  </span>
+
+    <a data-hotkey="g b" class="js-selected-navigation-item reponav-item" data-selected-links="repo_projects new_repo_project repo_project /romarcg/thymio_course_skeleton/projects" href="/romarcg/thymio_course_skeleton/projects">
+      <svg class="octicon octicon-project" viewBox="0 0 15 16" version="1.1" width="15" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
+      Projects
+      <span class="Counter" >0</span>
+</a>
+    <a class="js-selected-navigation-item reponav-item" data-hotkey="g w" data-selected-links="repo_wiki /romarcg/thymio_course_skeleton/wiki" href="/romarcg/thymio_course_skeleton/wiki">
+      <svg class="octicon octicon-book" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z"/></svg>
+      Wiki
+</a>
+
+  <a class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors dependency_graph pulse /romarcg/thymio_course_skeleton/pulse" href="/romarcg/thymio_course_skeleton/pulse">
+    <svg class="octicon octicon-graph" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"/></svg>
+    Insights
+</a>
+
+</nav>
+
+
+  </div>
+
+<div class="container new-discussion-timeline experiment-repo-nav  ">
+  <div class="repository-content ">
+
+    
+  <div class="file-navigation">
+    
+<div class="select-menu branch-select-menu js-menu-container js-select-menu float-left">
+  <button class=" btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w"
+    
+    type="button" aria-label="Switch branches or tags" aria-expanded="false" aria-haspopup="true">
+      <i>Branch:</i>
+      <span class="js-select-button css-truncate-target">master</span>
+  </button>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax>
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <svg class="octicon octicon-x js-menu-close" role="img" aria-label="Close" viewBox="0 0 12 16" version="1.1" width="12" height="16"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+        <span class="select-menu-title">Switch branches/tags</span>
+      </div>
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="form-control js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="branches" data-filter-placeholder="Filter branches/tags" class="js-select-menu-tab" role="tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="tags" data-filter-placeholder="Find a tag…" class="js-select-menu-tab" role="tab">Tags</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches" role="menu">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open selected"
+               href="/romarcg/thymio_course_skeleton/tree/master/how_to_thymio"
+               data-name="master"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                master
+              </span>
+            </a>
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    <div class="BtnGroup float-right">
+      
+  <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="BtnGroup-form" action="/romarcg/thymio_course_skeleton/new/master/how_to_thymio" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="MHxbxG2Iyv+S0lHKAct8bhY1M9VVAxf20xENY5UKI754/Bj7NyImbZ7SuJsJhainx/ietWlfhDh52f0gSG+juA==" />
+    <button class="btn btn-sm BtnGroup-item" type="submit" data-disable-with="Creating file…">
+      Create new file
+    </button>
+</form>
+
+        <a href="/romarcg/thymio_course_skeleton/upload/master/how_to_thymio" class="btn btn-sm BtnGroup-item">
+          Upload files
+        </a>
+
+      <a href="/romarcg/thymio_course_skeleton/find/master" data-pjax data-hotkey="t" class="js-pjax-capture-input btn btn-sm BtnGroup-item empty-icon">
+        Find file
+      </a>
+      <a href="/romarcg/thymio_course_skeleton/commits/master/how_to_thymio" class="btn btn-sm BtnGroup-item empty-icon tooltipped tooltipped-nw" aria-label="Browse commits for this branch">
+        History
+      </a>
+    </div>
+    <div class="breadcrumb"><span class="repo-root js-repo-root"><span class="js-path-segment"><a data-pjax="true" href="/romarcg/thymio_course_skeleton"><span>thymio_course_skeleton</span></a></span></span><span class="separator">/</span><strong class="final-path">how_to_thymio</strong><span class="separator">/</span></div>
+  </div>
+
+  
+
+<include-fragment src="/romarcg/thymio_course_skeleton/tree-commit/4959b28186565d5cf212c762b63e4bf116735dfb/how_to_thymio" class="commit-tease commit-loader">
+  <div class="blank">
+    <img alt="" class="loader" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32-EAF2F5.gif" width="16" height="16" />
+    Fetching latest commit…
+  </div>
+  <div class="loader-error">
+    Cannot retrieve the latest commit at this time.
+  </div>
+</include-fragment>
+
+
+<div class="file-wrap">
+
+  <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/romarcg/thymio_course_skeleton/tree/4959b28186565d5cf212c762b63e4bf116735dfb/how_to_thymio">Permalink</a>
+
+  <table class="files js-navigation-container js-active-navigation-container" data-pjax>
+      <tr class="up-tree js-navigation-item">
+        <td></td>
+        <td><a rel="nofollow" title="Go to parent directory" class="js-navigation-open" href="/romarcg/thymio_course_skeleton">..</a></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+
+    <tbody>
+      <tr class="warning include-fragment-error">
+        <td class="icon"><svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"/></svg></td>
+        <td class="content" colspan="3">Failed to load latest commit information.</td>
+      </tr>
+
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="README.md" id="04c6e90faac2675aa89e2176d2eec7d8-baed4f4ef9964f326bba024ed79fe9ae5f69acf6" href="/romarcg/thymio_course_skeleton/blob/master/how_to_thymio/README.md">README.md</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="Additional steps/details" class="message" href="/romarcg/thymio_course_skeleton/commit/4959b28186565d5cf212c762b63e4bf116735dfb">Additional steps/details</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-04-27T10:06:00Z">Apr 27, 2018</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="assembled_myt.png" id="8c860f474b65afae93be588c79b8b4b9-97a132e2e00621e15b5c1c91ebdaa44628fdd3de" href="/romarcg/thymio_course_skeleton/blob/master/how_to_thymio/assembled_myt.png">assembled_myt.png</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="Additional steps/details" class="message" href="/romarcg/thymio_course_skeleton/commit/a6f81062695a86162080530035755f8353000bb8">Additional steps/details</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-04-27T10:02:49Z">Apr 27, 2018</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="lego_back.png" id="ab16c0fb855f3a20dd0605194971802a-295b0a5ca1140c399fb22f9a59c1fea302136aec" href="/romarcg/thymio_course_skeleton/blob/master/how_to_thymio/lego_back.png">lego_back.png</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="Additional steps/details" class="message" href="/romarcg/thymio_course_skeleton/commit/a6f81062695a86162080530035755f8353000bb8">Additional steps/details</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-04-27T10:02:49Z">Apr 27, 2018</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="lego_front.png" id="23f3d5b377f08bf328c2f65084402c4d-54c010f91dd1c1dea4f94e98e16f9fec0eb76fa9" href="/romarcg/thymio_course_skeleton/blob/master/how_to_thymio/lego_front.png">lego_front.png</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="Additional steps/details" class="message" href="/romarcg/thymio_course_skeleton/commit/a6f81062695a86162080530035755f8353000bb8">Additional steps/details</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-04-27T10:02:49Z">Apr 27, 2018</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="lego_side1.png" id="8b871906a32041987397d5298c0e60d7-4cfe36496e42311c5df9db1dfb16b35ae8fae32f" href="/romarcg/thymio_course_skeleton/blob/master/how_to_thymio/lego_side1.png">lego_side1.png</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="Additional steps/details" class="message" href="/romarcg/thymio_course_skeleton/commit/a6f81062695a86162080530035755f8353000bb8">Additional steps/details</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-04-27T10:02:49Z">Apr 27, 2018</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="lego_side2.png" id="4c69eee4e0e4d4e2df6072aee1b1c2ca-a66826a9899b4d2238b95855b82c32923ccc79bf" href="/romarcg/thymio_course_skeleton/blob/master/how_to_thymio/lego_side2.png">lego_side2.png</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="Additional steps/details" class="message" href="/romarcg/thymio_course_skeleton/commit/a6f81062695a86162080530035755f8353000bb8">Additional steps/details</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-04-27T10:02:49Z">Apr 27, 2018</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="mount1.png" id="b481465755b516edc199246d472b9b6d-0d9b217560d14b12386275da69968de7be9fe050" href="/romarcg/thymio_course_skeleton/blob/master/how_to_thymio/mount1.png">mount1.png</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="Additional steps/details" class="message" href="/romarcg/thymio_course_skeleton/commit/a6f81062695a86162080530035755f8353000bb8">Additional steps/details</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-04-27T10:02:49Z">Apr 27, 2018</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="mount2.png" id="85374a7fc9043116a2805a868d5cc962-a7b5e811a9fb34dc4eee55b9bbba23eb59e1e01b" href="/romarcg/thymio_course_skeleton/blob/master/how_to_thymio/mount2.png">mount2.png</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="Additional steps/details" class="message" href="/romarcg/thymio_course_skeleton/commit/a6f81062695a86162080530035755f8353000bb8">Additional steps/details</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-04-27T10:02:49Z">Apr 27, 2018</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="mount3.png" id="7d9a6abe68083ba0ae23ea124f9a50a4-dd3468572049da0e3b3a024600d22b022981da94" href="/romarcg/thymio_course_skeleton/blob/master/how_to_thymio/mount3.png">mount3.png</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="Additional steps/details" class="message" href="/romarcg/thymio_course_skeleton/commit/a6f81062695a86162080530035755f8353000bb8">Additional steps/details</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-04-27T10:02:49Z">Apr 27, 2018</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="mount4.png" id="1009e11861d1918f19d7747de2b49345-35041e2f7193bad066adeaf12d42ee6141841e31" href="/romarcg/thymio_course_skeleton/blob/master/how_to_thymio/mount4.png">mount4.png</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="Additional steps/details" class="message" href="/romarcg/thymio_course_skeleton/commit/a6f81062695a86162080530035755f8353000bb8">Additional steps/details</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-04-27T10:02:49Z">Apr 27, 2018</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="mount5.png" id="ab502632a94cf4c5d69495626f796d6c-bb2133d04c10537bf5c0bfa45fc765ad4f869f44" href="/romarcg/thymio_course_skeleton/blob/master/how_to_thymio/mount5.png">mount5.png</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="Additional steps/details" class="message" href="/romarcg/thymio_course_skeleton/commit/a6f81062695a86162080530035755f8353000bb8">Additional steps/details</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-04-27T10:02:49Z">Apr 27, 2018</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="whats_included.png" id="dc47256a7020c8c1a52977b5fb54951a-66d14764a02b8964d09efb514eefc3da3e7e779c" href="/romarcg/thymio_course_skeleton/blob/master/how_to_thymio/whats_included.png">whats_included.png</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="Additional steps/details" class="message" href="/romarcg/thymio_course_skeleton/commit/a6f81062695a86162080530035755f8353000bb8">Additional steps/details</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-04-27T10:02:49Z">Apr 27, 2018</time-ago></span>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+</div>
+
+
+
+  <div id="readme" class="readme boxed-group clearfix announce instapaper_body md">
+    <h3>
+      <svg class="octicon octicon-book" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z"/></svg>
+      README.md
+    </h3>
+
+      <article class="markdown-body entry-content" itemprop="text"><h1><a id="user-content-mighty-thymio-myt-how-to" class="anchor" aria-hidden="true" href="#mighty-thymio-myt-how-to"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Mighty Thymio (MyT) how to:</h1>
+<h2><a id="user-content-assembly" class="anchor" aria-hidden="true" href="#assembly"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Assembly</h2>
+<p>What is included?</p>
+<p><a target="_blank" href="/romarcg/thymio_course_skeleton/blob/master/how_to_thymio/whats_included.png"><img src="/romarcg/thymio_course_skeleton/raw/master/how_to_thymio/whats_included.png" alt="MyT package" style="max-width:100%;"></a></p>
+<ol>
+<li>Thymio base</li>
+<li>Main computer block composed of:
+<ol>
+<li>Main computer</li>
+<li>Connection wires</li>
+<li>Support blocks (lego pieces)</li>
+</ol>
+</li>
+<li>Battery pack</li>
+<li>Wireless antenna</li>
+</ol>
+<h3><a id="user-content-steps-to-assemble-the-myt" class="anchor" aria-hidden="true" href="#steps-to-assemble-the-myt"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Steps to assemble the MyT</h3>
+<p>Before starting the assemble process <strong>carefully verify</strong> that:</p>
+<ol>
+<li>The printed numbers on the base, wifi antenna and main computer are the same. If this is not the case look for the correct one or request help.</li>
+<li>The switch on the right of the main computer is <strong>turned down</strong>.</li>
+</ol>
+<p>To assemble the MyT follow the next steps:</p>
+<ol>
+<li>Carefully pull off the parts from the box.</li>
+</ol>
+<blockquote>
+<p>If the support blocks are detached, follow the images in the <a href="#appendices">appendices</a> section to put them back together. <strong>Do not</strong> continue with the assembling process until the support blocks are properly connected.</p>
+</blockquote>
+<ol start="2">
+<li>Mount the main computer block on top of the Thymio base:</li>
+</ol>
+<p><a target="_blank" href="/romarcg/thymio_course_skeleton/blob/master/how_to_thymio/mount1.png"><img src="/romarcg/thymio_course_skeleton/raw/master/how_to_thymio/mount1.png" alt="Mounting computer on base" style="max-width:100%;"></a></p>
+<blockquote>
+<p>Use the lego marks on top of the base as a guide.</p>
+</blockquote>
+<ol start="3">
+<li>Connect the usb-to-micro-usb wire from the main computer to the base:</li>
+</ol>
+<p><a target="_blank" href="/romarcg/thymio_course_skeleton/blob/master/how_to_thymio/mount2.png"><img src="/romarcg/thymio_course_skeleton/raw/master/how_to_thymio/mount2.png" alt="Connect to wire base" style="max-width:100%;"></a></p>
+<ol start="4">
+<li>Connect the wifi antenna to the main computer:</li>
+</ol>
+<p><a target="_blank" href="/romarcg/thymio_course_skeleton/blob/master/how_to_thymio/mount3.png"><img src="/romarcg/thymio_course_skeleton/raw/master/how_to_thymio/mount3.png" alt="Connect to wire base" style="max-width:100%;"></a></p>
+<ol start="5">
+<li>Insert the battery pack in the space between the main computer and the base:</li>
+</ol>
+<p><a target="_blank" href="/romarcg/thymio_course_skeleton/blob/master/how_to_thymio/mount4.png"><img src="/romarcg/thymio_course_skeleton/raw/master/how_to_thymio/mount4.png" alt="Insert battery pack" style="max-width:100%;"></a></p>
+<ol start="6">
+<li>Connect the power wire (coming from the main computer) to the battery pack:</li>
+</ol>
+<p><a target="_blank" href="/romarcg/thymio_course_skeleton/blob/master/how_to_thymio/mount5.png"><img src="/romarcg/thymio_course_skeleton/raw/master/how_to_thymio/mount5.png" alt="Connect battery pack" style="max-width:100%;"></a></p>
+<p>The assembled MyT should look like as depicted:</p>
+<p><a target="_blank" href="/romarcg/thymio_course_skeleton/blob/master/how_to_thymio/assembled_myt.png"><img src="/romarcg/thymio_course_skeleton/raw/master/how_to_thymio/assembled_myt.png" alt="Assembled MyT" style="max-width:100%;"></a></p>
+<p>Once the MyT is assembled, pull the battery out a couple of centimeters and push the small button on the side of the battery; a few leds on the battery will light up to indicate its charge level.  Always make sure the external battery pack is properly charged, otherwise the system may be unstable.  If the system is properly assembled, a blue LED on top of the switch in main computer should turn on.</p>
+<h2><a id="user-content-power-on" class="anchor" aria-hidden="true" href="#power-on"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Power on:</h2>
+<blockquote>
+<p>MyT has 3 power sources: one in the thymio base, one silver battery pack besides the main computer (mark with the MyT number), and the white external battery pack. <strong>Before running any experiment make sure the external battery pack is properly charged.</strong>  The battery pack can be charged with any micro-usb cable.</p>
+</blockquote>
+<p>Follow the next steps to bring up the MyT software (OS and ROS):</p>
+<ol>
+<li>Turn up the switch on the right of the main computer.</li>
+</ol>
+<blockquote>
+<p>Two LEDs on top of the main computer will turn on and an ascending tune will play. The fixed red LED indicates that the switch is up, the blinking blue LED indicates that the computer is <em>operating</em>.  The system will go through some phases where different leds light up on the thymio base.</p>
+</blockquote>
+<ol start="2">
+<li>Wait until the red led on the <code>back</code> arrow on the base starts to blink (<em>heartbeat</em>).  This should happen within about 90 seconds from switching the odroid on.
+<ol>
+<li>If the LED is blinking it means ROS is ready.</li>
+<li>If there is no blinking, something went wrong (see <a href="#appendices">fix</a> for corruption error or to request help).</li>
+</ol>
+</li>
+</ol>
+<blockquote>
+<p>There are three body LEDs indicators in the base, one at the top and two at the sides. If the LEDs are green it means external battery is connected; yellow means external battery is not connected but there is still power in internal sources; red means internal sources are critically low.</p>
+</blockquote>
+<h2><a id="user-content-simple-troubleshooting-fix" class="anchor" aria-hidden="true" href="#simple-troubleshooting-fix"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Simple troubleshooting fix</h2>
+<p>If at any point in time the main computer is on but there is no heartbeat on the thymio base, try disconnecting the microusb cable fromt he back of the thymio, waiting a few seconds, reconnecting the cable carefully, then waiting about 20 seconds.</p>
+<p>If the heartbeat does not return within about 20 seconds, you should turn off the main computer switch (down position), turn off the thymio, and try restarting the main computer from scratch.  If this also fails, request help and check <a href="#appendices">troubleshooting</a>.</p>
+<h2><a id="user-content-connect-to-the-real-myt" class="anchor" aria-hidden="true" href="#connect-to-the-real-myt"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Connect to the real MyT</h2>
+<blockquote>
+<p>If the machine trying to connect to the MyT is in a virtual machine. Verify that the network setting of this machine is set to <strong>bridged mode</strong>.</p>
+</blockquote>
+<p>Each MyT creates its own access point (AP) with the name <code>thymioX</code>, where <code>X</code> is the number printed on the stickers.</p>
+<ol>
+<li>Connect to the corresponding MyT AP (key is <code>idsia1234</code>).</li>
+<li>Setup the environment variable to reach the ROS master in the MyT.</li>
+</ol>
+<p><code>export ROS_MASTER_URI=http://thymioX:11311</code></p>
+<ol start="3">
+<li>As a simple verification, run <code>rostopic list</code> to confirm that the connection was done properly. A list of topics from the corresponding MyT should appear, e.g. <code>/thymioX/odom</code>.</li>
+</ol>
+<blockquote>
+<p>All exposed topics from the ROS controller follow the convention <code>/thymioX/topic_name</code>.</p>
+</blockquote>
+<ol start="4">
+<li>Step 2 (verified in step 3) configures a one-way communication. This means one can receive data from the remote ROS master (in the MyT). If one wants to send data (publish topics) to the ROS master another environment variable needs to be setup:</li>
+</ol>
+<p><code>export ROS_MASTER_URI=my-ip-address</code></p>
+<p>where <code>my-ip-address</code> is the IP address of the computer sending data (the local machine). To display the IP address of the local machine use <code>ifconfig -a</code> command, it should look like <code>192.168.168.XXX</code></p>
+<ol start="5">
+<li>Verify that data can be sent, publish a velocity command to the topic <code>/thymioX/cmd_vel</code>:</li>
+</ol>
+<div class="highlight highlight-source-shell"><pre>rostopic pub /thymioX/cmd_vel geometry_msgs/Twist 
+  x: 0.1
+  y: 0.0
+  z: 0.0
+angular:
+  x: 0.0
+  y: 0.0
+  z: 0.0<span class="pl-s"><span class="pl-pds">"</span></span></pre></div>
+<p>If everything is well setup the MyT should start moving forward.</p>
+<blockquote>
+<p>If a restart of the odometry data (<code>/thymioX/odom</code>) is needed, unplug and plug again the usb-to-micro-usb wire from the main computer to the base.</p>
+</blockquote>
+<blockquote>
+<p><strong>Important:</strong> remember to change back the values of <code>ROS_MASTER_URI</code> and <code>ROS_IP</code> if you want to use your local rosmaster (e.g. the simulator): <code>export ROS_MASTER_URI=http://localhost:11311</code> and <code>export ROS_IP=</code></p>
+</blockquote>
+<h2><a id="user-content-change-network-mode-advanced" class="anchor" aria-hidden="true" href="#change-network-mode-advanced"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Change network mode (advanced):</h2>
+<p>MyT has three network modes: off, AP (default) and managed. Managed mode will connect to a predefined access point.</p>
+<blockquote>
+<p>Internet connection is not present in AP mode. If internet connection is needed while in AP mode, an Ethernet cable (with internet connection) must be attached to the main computer.
+Managed mode should only be used when the predefined access point is present.</p>
+</blockquote>
+<p>To change the network mode:</p>
+<ol>
+<li>Press and hold the <code>right</code> arrow until an orange indicator appears.</li>
+<li>Press the <code>left</code> arrow to select a mode (down off, down-left AP, left .</li>
+<li>Press the <code>middle</code> button to confirm the selection.</li>
+</ol>
+<h2><a id="user-content-power-off-important" class="anchor" aria-hidden="true" href="#power-off-important"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Power off (important!)</h2>
+<blockquote>
+<p><strong>Improperly powering-off the MyT could result in a corrupted storage, which creates problems during the power-on process</strong></p>
+</blockquote>
+<p>To properly power-off the MyT:</p>
+<ol>
+<li>Press and hold the <code>back</code> arrow (about 5s) until a descending tune is played and the base turn off. This will start the shutdown process of the main computer.</li>
+<li>Wait until the base restarts (there will be an ascending tune). This will be an indication that the main computer has turned-off correctly. Additionally, verify that only the red LED on top of the main computer is on, the blue one should be off.</li>
+</ol>
+<blockquote>
+<p>As the base has restarted, the lights on the base should be on.  This is expected.</p>
+</blockquote>
+<ol start="3">
+<li>At this point turn down the main switch of the main computer.</li>
+<li>Press and hold the middle button on the base until the base is switched off. A descending tune will be played and the lights on the base will turn off.  The MyT is now off.</li>
+</ol>
+<h2><a id="user-content-update-the-myt-software" class="anchor" aria-hidden="true" href="#update-the-myt-software"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Update the MyT software</h2>
+<blockquote>
+<p>This process is only for internal development <strong>do not</strong> use it unless it is explicitly requested.</p>
+</blockquote>
+<ol>
+<li>Switch to managed mode or connect an Ethernet wire to the MyT while in AP mode.</li>
+<li>Press and hold <code>left</code> arrow for 6 seconds (there will not be any sound or light feedback).</li>
+<li>Updating process will take about 2min. When the updating process is finished, the MyT will restart.</li>
+</ol>
+<h2><a id="user-content-appendices" class="anchor" aria-hidden="true" href="#appendices"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a name="user-content-appendices"></a>Appendices</h2>
+<h3><a id="user-content-support-blocks" class="anchor" aria-hidden="true" href="#support-blocks"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Support blocks</h3>
+<p>Different views of the support blocks</p>
+<p><a target="_blank" href="/romarcg/thymio_course_skeleton/blob/master/how_to_thymio/lego_front.png"><img src="/romarcg/thymio_course_skeleton/raw/master/how_to_thymio/lego_front.png" alt="Support blocks" style="max-width:100%;"></a></p>
+<p><a target="_blank" href="/romarcg/thymio_course_skeleton/blob/master/how_to_thymio/lego_back.png"><img src="/romarcg/thymio_course_skeleton/raw/master/how_to_thymio/lego_back.png" alt="Support blocks" style="max-width:100%;"></a></p>
+<p><a target="_blank" href="/romarcg/thymio_course_skeleton/blob/master/how_to_thymio/lego_side1.png"><img src="/romarcg/thymio_course_skeleton/raw/master/how_to_thymio/lego_side1.png" alt="Support blocks" style="max-width:100%;"></a></p>
+<p><a target="_blank" href="/romarcg/thymio_course_skeleton/blob/master/how_to_thymio/lego_side2.png"><img src="/romarcg/thymio_course_skeleton/raw/master/how_to_thymio/lego_side2.png" alt="Support blocks" style="max-width:100%;"></a></p>
+<h3><a id="user-content-corruption-error-fix" class="anchor" aria-hidden="true" href="#corruption-error-fix"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Corruption error fix</h3>
+<h4><a id="user-content-if-after-powering-on-the-myt-is-not-blinking" class="anchor" aria-hidden="true" href="#if-after-powering-on-the-myt-is-not-blinking"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>If after powering on the MyT is not blinking</h4>
+<p>Check that all cables are connected</p>
+<p>Login to the thymio via ssh <code>root@thymioX</code> (pw: odroid)</p>
+<p>Check that docker is up</p>
+<div class="highlight highlight-source-shell"><pre>      systemctl status docker</pre></div>
+<p>If not, reset docker:</p>
+<div class="highlight highlight-source-shell"><pre>      systemctl stop docker
+      rm -r /var/lib/docker/runtimes
+      rm -r /var/lib/docker/containers/<span class="pl-k">*</span>
+      systemctl start docker
+      <span class="pl-c1">source</span> /root/docker/mighty-thymio/do_update.sh</pre></div>
+<p>Check that the services are up</p>
+<div class="highlight highlight-source-shell"><pre>      <span class="pl-c1">cd</span> docker/mighty-thymio
+      docker-compose ps</pre></div>
+<p>If not, recreate them:</p>
+<div class="highlight highlight-source-shell"><pre>      <span class="pl-c1">source</span> do_update.sh</pre></div>
+</article>
+  </div>
+
+
+  </div>
+  <div class="modal-backdrop js-touch-events"></div>
+</div>
+
+    </div>
+  </div>
+
+  </div>
+
+      
+<div class="footer container-lg px-3" role="contentinfo">
+  <div class="position-relative d-flex flex-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+    <ul class="list-style-none d-flex flex-wrap ">
+      <li class="mr-3">&copy; 2018 <span title="0.29093s from unicorn-2734793342-7h7xm">GitHub</span>, Inc.</li>
+        <li class="mr-3"><a data-ga-click="Footer, go to terms, text:terms" href="https://github.com/site/terms">Terms</a></li>
+        <li class="mr-3"><a data-ga-click="Footer, go to privacy, text:privacy" href="https://github.com/site/privacy">Privacy</a></li>
+        <li class="mr-3"><a href="https://help.github.com/articles/github-security/" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li class="mr-3"><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+        <li><a data-ga-click="Footer, go to help, text:help" href="https://help.github.com">Help</a></li>
+    </ul>
+
+    <a aria-label="Homepage" title="GitHub" class="footer-octicon" href="https://github.com">
+      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
+   <ul class="list-style-none d-flex flex-wrap ">
+        <li class="mr-3"><a data-ga-click="Footer, go to contact, text:contact" href="https://github.com/contact">Contact GitHub</a></li>
+      <li class="mr-3"><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li class="mr-3"><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li class="mr-3"><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li class="mr-3"><a href="https://blog.github.com" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a data-ga-click="Footer, go to about, text:about" href="https://github.com/about">About</a></li>
+
+    </ul>
+  </div>
+  <div class="d-flex flex-justify-center pb-6">
+    <span class="f6 text-gray-light"></span>
+  </div>
+</div>
+
+
+
+  <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"/></svg>
+    <button type="button" class="flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+      <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+    </button>
+    You can’t perform that action at this time.
+  </div>
+
+
+    
+    <script crossorigin="anonymous" integrity="sha512-59wgJfn5t7o0vJCH9xFIZskxgBwo3eJUjAbqjol5NTq1iuby95nh02BZbPPQuCMWZMlaBnq+SpSzc8/tIMxK9Q==" type="application/javascript" src="https://assets-cdn.github.com/assets/frameworks-0b172261881356cc76a52d474aa3611d.js"></script>
+    
+    <script crossorigin="anonymous" async="async" integrity="sha512-HPUDUQwqrfuoCMLAZumm9rH0ufrKNN8J2NObFPTp4vIpYl3aDwPuani+K+1BFM++rw66wW0zWyaYcmdN54WO5A==" type="application/javascript" src="https://assets-cdn.github.com/assets/github-010f10e24f3f42174962a140442843fa.js"></script>
+    
+    
+    
+    
+  <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner d-none">
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"/></svg>
+    <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+  </div>
+  <div class="facebox" id="facebox" style="display:none;">
+  <div class="facebox-popup">
+    <div class="facebox-content" role="dialog" aria-labelledby="facebox-header" aria-describedby="facebox-description">
+    </div>
+    <button type="button" class="facebox-close js-facebox-close" aria-label="Close modal">
+      <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+    </button>
+  </div>
+</div>
+
+  <div class="Popover js-hovercard-content position-absolute" style="display: none; outline: none;" tabindex="0">
+  <div class="Popover-message Popover-message--bottom-left Popover-message--large Box box-shadow-large" style="width:360px;">
+  </div>
+</div>
+
+<div id="hovercard-aria-description" class="sr-only">
+  Press h to open a hovercard with more details.
+</div>
+
+
+  </body>
+</html>
+
