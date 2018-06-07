@@ -1,0 +1,25 @@
+Potential 8.48 volts.
+// Gripper Open/Close
+PORTC=(open) 0x20; OR (close)0x10
+OCR1A=724;
+OCR1B=0;
+_delay_ms(1100);
+PORTC=0;
+1100 open 
+1200 close
+
+
+//ARM UP/DOWN with weight
+PORTC=(up)0x40;(down)0x80
+OCR1A=724;
+OCR1B=0;
+_delay_ms(3500);
+PORTC=0;
+
+
+//ARM UP/DOWN with weight
+PORTC=(up)0x40;(down)0x80
+OCR1A=724;
+OCR1B=0;
+_delay_ms(3500);
+PORTC=0;

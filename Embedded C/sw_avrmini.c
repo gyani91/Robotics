@@ -1,0 +1,81 @@
+#include<avr/io.h>
+#include<util/delay.h>
+#include<compat/deprecated.h>
+
+int main()
+{
+	int i;
+	DDRB=0x0F;
+	PORTB=0xF0;
+	while(1)
+	{/*
+		while(1)
+		{
+		if(bit_is_clear(PINB,4))
+		{
+			sbi(PORTB,0);
+		}
+		else
+		{
+			cbi(PORTB,0);
+			break;
+		}
+		}
+		while(1)
+		{
+		if(bit_is_clear(PINB,5))
+		{
+			sbi(PORTB,1);
+		}
+		else
+		{
+			cbi(PORTB,1);
+			break;
+		}
+		}
+		while(1)
+		{
+		if(bit_is_clear(PINB,6))
+		{
+			sbi(PORTB,2);
+			
+		}
+		else
+		{
+			cbi(PORTB,2);
+			break;
+		}
+		}
+		while(1)
+		{
+		if(bit_is_clear(PINB,7))
+		{
+			sbi(PORTB,3);
+			
+		}
+		else
+		{
+			cbi(PORTB,3);
+			break;
+		}
+		}
+		*/
+		while(1)
+		{
+		for(i=4;i<=7;i++)
+		{
+			if(bit_is_clear(PINB,i))
+			{
+				sbi(PORTB,i-4);
+				break;
+				
+			}
+			else
+			{
+				cbi(PORTB,i-4);
+			}
+		}
+		}
+	}
+}
+	
